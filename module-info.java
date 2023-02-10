@@ -1,2 +1,2 @@
-module DSA_Striver {
+module java_DSA {
 }

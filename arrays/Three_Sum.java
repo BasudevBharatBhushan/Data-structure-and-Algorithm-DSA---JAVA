@@ -19,7 +19,7 @@ public class Three_Sum {
 	                
 	                while(lo < hi){
 	                    if(nums[lo]+nums[hi]==sum){
-	                        list.add(new ArrayList(Arrays.asList(nums[i], nums[lo], nums[hi])));
+	                        list.add(new ArrayList<Integer>(Arrays.asList(nums[i], nums[lo], nums[hi])));
 	                        
 	                        while(lo<hi && nums[lo]==nums[lo+1])lo++;
 	                        while(lo<hi && nums[hi]==nums[hi-1])hi--;

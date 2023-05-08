@@ -1,8 +1,22 @@
 package arrays;
 import java.util.*;
+import helpersFunction.MultiDimensionalArrayHelper;
 public class Merge_Intervals {
 
 	public static void main(String[] args) {
+		int intervals [][] = {
+				{1,3},
+				{2,6},
+				{8,10},
+				{15,18}
+		};
+		
+		
+//		traverseCOlumnWise(intervals);
+		
+		
+		intervals = overlappedInterval(intervals);
+		MultiDimensionalArrayHelper.print2DArray(intervals);
 		
 
 	}
@@ -31,10 +45,16 @@ public class Merge_Intervals {
 				end = i[1];
 			}
 		}
-		
+		list.add(new int[] {start, end});
 		
 		return list.toArray(new int[0][1]);
 		
+	}
+	
+	static void traverseCOlumnWise(int[][] intervals) {
+		for(int[]i:intervals) {
+			System.out.println(i[0]);
+		}
 	}
 
 }

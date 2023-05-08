@@ -1,6 +1,7 @@
 package recursion_Medium;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -15,7 +16,8 @@ public class Combination_Sum_II {
 
 	}
 	public static List<List<Integer>> combinationSum2(int[]candidates, int target) {
-
+		
+		Arrays.sort(candidates);
 		List<List<Integer>> ans = new ArrayList<>();
 		List<Integer>ds = new ArrayList<>();
 

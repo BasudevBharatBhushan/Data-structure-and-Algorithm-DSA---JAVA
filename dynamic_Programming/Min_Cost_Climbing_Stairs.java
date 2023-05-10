@@ -59,7 +59,7 @@ public class Min_Cost_Climbing_Stairs {
 		return Math.min(dp[n-1], dp[n-2]);
 	}
 	
-	//Optimised Tabulation
+	//Optimized Tabulation
 	public static int minCostClimbingtairs_tabular_optimised(int [] cost , int n ) {
 		
 		int prev2 = cost[0];
@@ -72,7 +72,6 @@ public class Min_Cost_Climbing_Stairs {
 		}
 		
 		return Math.min(prev2, prev1);
-		
 		
 	}	
 	

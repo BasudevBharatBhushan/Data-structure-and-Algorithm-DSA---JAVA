@@ -4,6 +4,7 @@ import helpersFunction.ArrayHelper;
 public class Insertion_Sort {
 
 	public static void main(String[] args) {
+		
 		int arr[] = {8, 4, 1, 5, 9, 2};
 		insertion_sort(arr);
 		
